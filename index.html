@@ -189,7 +189,7 @@
         <div class="row row-content">
             <div class="col col-sm-6 mx-auto">
                 <div class="card">
-                    <h3 class="bg-info text-white">Reserve a Campsite</h3>
+                    <h3 class="card-title bg-info text-white">Reserve a Campsite</h3>
                     <div class="card-body">
                         <form id="reserveForm">
                             <div class="row form-group">
@@ -260,7 +260,7 @@
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header card-title bg-info text-white">
-              <h5 class="modal-title" id="reserveModalLabel">Reserve a Campsite</h5>
+              <h3 class="modal-title" id="reserveModalLabel">Reserve a Campsite</h5>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
@@ -292,6 +292,21 @@
                     </div>
                     <div class="row">
                         <div class="col">
+                            <label class="col-sm-6 col-form-label">Campsite Type</label>
+                            <div class="col" class="btn" class="btn-group btn-group-toggle" data-toggle="buttons">
+                                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                    <label class="btn btn-secondary bg-success active">
+                                        <input type="radio" name="options" id="tent" autocomplete="off" checked> Tent
+                                    </label>
+                                    <label class="btn btn-secondary bg-primary">
+                                        <input type="radio" name="options" id="rv" autocomplete="off"> RV
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
                             <div class="col">
                                 <button type="cancel" class="btn btn-primary mt-4">Cancel</button>
                                 <button type="submit" class="btn btn-primary mt-4">Search</button>
@@ -303,28 +318,6 @@
           </div>
         </div>
       </div>
-
-    <!--
-    <div class="modal" tabindex="-1">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title">Modal title</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close" data-target="#reserveModal">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <p>Modal body text goes here.</p>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    -->
 
 
     <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
