@@ -19,3 +19,9 @@ $(function() {
         $("#reserveModal").modal("show");
     });
 });
+
+$(function() {
+    $("#loginModal").click(function() {
+        $("#loginModal").modal("show");
+    });
+});
