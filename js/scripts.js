@@ -21,7 +21,7 @@ $(function() {
 });
 
 $(function() {
-    $("#loginModal").click(function() {
+    $("#loginButton").click(function() {
         $("#loginModal").modal("show");
     });
 });
